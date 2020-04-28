@@ -21,7 +21,7 @@ class TitleTest(LiveServerTestCase):
 
 class AddEditPlacesTests(LiveServerTestCase):
 
-    fixtures = ['test_places']
+    fixtures = ['test_users', 'test_places']
 
     def setUp(self):
         self.browser = webdriver.Firefox()
